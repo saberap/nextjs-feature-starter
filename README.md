@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) Modular structure project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Next.js Modular Structure
+
+There are different architectural structures for Next.js projects. After doing many projects and testing this issue, we created a **modular structure for Next.js projects**, and now I am very happy to be able to provide you with this structure.
+
+This project support CLI commands.
 
 ## Getting Started
 
