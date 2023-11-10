@@ -3,25 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "init": "cd scripts/ && init.bat",
+    "prepare": "husky install",
+    "pre-commit": "next lint",
+    "create:module": "sh ./scripts/create-module.sh",
+    "create:api": "sh ./scripts/create-api.sh",
+    "create:component": "sh ./scripts/create-component.sh",
+    "create:config": "sh ./scripts/create-config.sh",
+    "create:constant": "sh ./scripts/create-constant.sh",
+    "create:context": "sh ./scripts/create-context.sh",
+    "create:hook": "sh ./scripts/create-hook.sh",
+    "create:type": "sh ./scripts/create-type.sh",
+    "create:utility": "sh ./scripts/create-utility.sh",
+    "create:slice": "sh ./scripts/create-slice.sh"
   },
   "dependencies": {
+    "next": "14.0.1",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.1"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.1"
+    "typescript": "^5"
   }
 }
