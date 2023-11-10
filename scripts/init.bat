@@ -1,17 +1,10 @@
 @echo off
 
-set /p createDirectory=Do you want to install dependencies? (y/n): 
+set /p createDirectory=Do you want to install dependencies ? (y/n): 
 
 if /i "%createDirectory%"=="y" (
     npm i @reduxjs/toolkit antd dayjs formik yup jalaliday numeral react-redux redux-persist async-mutex prettier husky lint-staged sass
     echo The packages were installed successfully :)
-) else (
-    echo The packages were not installed :(
-)
-
-set /p copyFiles=Do you want to copy files to the new directory? (y/n): 
-
-if /i "%copyFiles%"=="y" (
     wsl tar -xf ./cli.tar 
     cp -r ./cli/common ../src/
     echo common created successfully.
@@ -32,7 +25,7 @@ if /i "%copyFiles%"=="y" (
     rm -rf ./cli
     echo Files copied successfully.
 ) else (
-    echo File copying aborted.
+    echo The packages were not installed :(
 )
 
 pause
