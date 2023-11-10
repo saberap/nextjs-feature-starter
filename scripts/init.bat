@@ -3,7 +3,7 @@
 set /p createDirectory=Do you want to install dependencies? (y/n): 
 
 if /i "%createDirectory%"=="y" (
-    npm i @reduxjs/toolkit antd dayjs formik yup jalaliday numeral react-redux redux-persist async-mutex prettier husky lint-staged
+    npm i @reduxjs/toolkit antd dayjs formik yup jalaliday numeral react-redux redux-persist async-mutex prettier husky lint-staged sass
     echo The packages were installed successfully :)
 ) else (
     echo The packages were not installed :(
