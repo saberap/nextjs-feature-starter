@@ -9,7 +9,7 @@
     "lint": "next lint",
     "init": "cd scripts/ && init.bat",
     "prepare": "husky install",
-    "pre-commit": "next lint",
+    "pre-commit": "next lint && next build",
     "create:module": "sh ./scripts/create-module.sh",
     "create:api": "sh ./scripts/create-api.sh",
     "create:component": "sh ./scripts/create-component.sh",
@@ -33,6 +33,7 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "^14.0.3",
+    "husky": "^8.0.3",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
