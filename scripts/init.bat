@@ -30,6 +30,8 @@ if /i "%copyFiles%"=="y" (
     cp -rf ./cli/files/.env ../
     cp -rf ./cli/scripts/* .
     rm -rf ./cli
+    rm -rf ./cli.tar
+    rm -rf ./init.bat
     echo Files copied successfully.
 ) else (
     echo File copying aborted.
