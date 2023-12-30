@@ -5,8 +5,6 @@ set /p createDirectory=Do you want to install dependencies? (y/n):
 if /i "%createDirectory%"=="y" (
     call npm i @reduxjs/toolkit antd dayjs react-hook-form yup classnames jalaliday numeral react-redux redux-persist async-mutex prettier husky lint-staged sass
     echo The packages were installed successfully :)
-) else (
-    echo The packages were not installed :(
 )
 
 set /p copyFiles=Do you want to copy files to the new directory? (y/n): 
@@ -15,8 +13,8 @@ if /i "%copyFiles%"=="y" (
     wsl tar -xf ./cli.tar 
     cp -r ./cli/common ../src/
     echo common created successfully.
-    cp -r ./cli/modules ../src/
-    echo modules created successfully.
+    cp -r ./cli/features ../src/
+    echo features created successfully.
     cp -r ./cli/redux ../src/
     echo redux created successfully.
     cp -r ./cli/styles ../src/
