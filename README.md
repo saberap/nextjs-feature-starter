@@ -1,4 +1,4 @@
-## Next.js Modular Structure
+## Next.js Structure
 
 There are different architectural structures for Next.js projects. After doing many projects and testing this issue, we created a **modular structure for Next.js projects**, and now I am very happy to be able to provide you with this structure.
 
